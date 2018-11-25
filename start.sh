@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 # If a ZooKeeper container is linked with the alias `zookeeper`, use it.
-# You MUST set ZOOKEEPER_IP in env otherwise.
+# You MUST set KAFKA_ZOOKEEPER_CONNECT in env otherwise.
 [ -n "$ZOOKEEPER_PORT_2181_TCP_ADDR" ] && KAFKA_ZOOKEEPER_CONNECT=$ZOOKEEPER_PORT_2181_TCP_ADDR
 [ -n "$ZOOKEEPER_PORT_2181_TCP_PORT" ] && ZOOKEEPER_PORT=$ZOOKEEPER_PORT_2181_TCP_PORT
 
